@@ -85,6 +85,37 @@ module.exports = function toReadable(number) {
             }
             continue;
         }
+        else if (i == 1) {
+            if(arrayReversNum[1] == 0) continue;
+            if (arrayReversNum[0] != 0) result = " " + result
+            switch (arrayReversNum[i]) {
+                case '2':
+                    result = "twenty" + result;
+                    break;
+                case '3':
+                    result = "thirty" + result;
+                    break;
+                case '4':
+                    result = "forty" + result;
+                    break;
+                case '5':
+                    result = "fifty" + result;
+                    break;
+                case '6':
+                    result = "sixty" + result;
+                    break;
+                case '7':
+                    result = "seventy" + result;
+                    break;
+                case '8':
+                    result = "eighty" + result;
+                    break;
+                case '9':
+                    result = "ninety" + result;
+                    break;
+            }
+
+        }
        
     }
     return result.replace(/\s$/,'') ;
